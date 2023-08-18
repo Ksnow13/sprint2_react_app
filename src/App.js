@@ -1,10 +1,10 @@
 
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import Table from './components/Table.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 
-/*
+
 class App extends Component {
 
   constructor(props) {
@@ -15,7 +15,7 @@ class App extends Component {
   }
 
      componentDidMount() {
-          var base64 = require("base-64"); // install it before use from npm i base-64
+          var base64 = require("base-64");
           let headers = new Headers();
 
                const uname = "admin";
@@ -23,19 +23,13 @@ class App extends Component {
 
                headers.set('Authorization', 'Basic' + base64.encode(uname + ":" + pword));
 
-             	fetch('http://100.25.223.36:80/vehicle',{mode: 'no-cors'}, {method: 'GET'},
+             	fetch('http://54.237.115.48:80/vehicle',{mode: 'no-cors'}, {method: 'GET'},
              	{
-                                  headers: {
-                                         Authorization: "Basic " + base64.encode(uname + ":" + pword),
-                                       },
-
-                                 },
-                                      )
-
+                  headers: {Authorization: "Basic " + base64.encode(uname + ":" + pword),}
+                 })
              	.then(res => res.json())
              	.then(json => json)
              	.then(vehicle => this.setState({ 'vehicle': vehicle })).catch(error => {console.error()});
-
              }
 
   render() {
@@ -43,7 +37,7 @@ class App extends Component {
       <div className="App">
       <nav className="navbar navbar-light bg-light">
                 <a className="navbar-brand" href="./">
-                  <img src={logo} alt="logo" width="40" /> City List
+                  <img src={logo} alt="logo" width="40" /> All Vehicles
                 </a>
               </nav>
         <Table vehicle={ this.state.vehicle }/>
@@ -52,11 +46,9 @@ class App extends Component {
   }
 }
 
-
-
 export default App;
 
-*/
+
 
 
 
@@ -84,6 +76,8 @@ export default function App(){
 }
 
 */
+
+/*
 
 export default function App(){
 
@@ -115,6 +109,7 @@ setCars(data);
 
 
 }
+*/
 
 
 
